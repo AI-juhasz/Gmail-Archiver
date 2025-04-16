@@ -87,6 +87,6 @@ if __name__ == '__main__':
         exclude_starred=True,         # Csillagozott levelek maradnak
         exclude_important=True,       # Fontos levelek maradnak
         only_read=True,               # Csak olvasott levelek
-        before_date="2024/12/31",     # 2024 vége előtti levelek
+        before_date="2026/12/31",     # 2024 vége előtti levelek
         after_date="2022/01/01"       # 2022-től kezdve
     )
