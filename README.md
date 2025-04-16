@@ -91,6 +91,39 @@ A script lekéri az összes INBOX címkével rendelkező levelet
 
 ---
 
+## 🎯 Opcionális szűrési lehetőségek
+
+A script testreszabható az alábbi szűrőkkel:
+
+| Paraméter           | Leírás                                                                 |
+|---------------------|------------------------------------------------------------------------|
+| `exclude_starred`   | Csillagozott levelek kizárása az archiválásból (alapértelmezett: `True`) |
+| `exclude_important` | Fontos levelek kizárása az archiválásból (alapértelmezett: `True`)       |
+| `only_read`         | Csak olvasott levelek archiválása (alapértelmezett: `True`)              |
+| `before_date`       | Dátum előtti levelek archiválása (pl. `'2023/01/01'`)                    |
+| `after_date`        | Dátum utáni levelek archiválása (pl. `'2022/01/01'`)                     |
+
+A szűrés a Gmail saját keresőnyelvét (query) használja.
+
+---
+
+## 🧪 Használat példával – szűréssel
+
+A `archive_filtered_emails(...)` függvény meghívásával szűrhetsz:
+
+```python
+archive_filtered_emails(
+    service,
+    exclude_starred=True,         # Csillagozott marad
+    exclude_important=True,       # Fontos marad
+    only_read=True,               # Csak olvasott levelek
+    before_date="2023/01/01",     # 2023 előttiek
+    after_date="2021/01/01"       # 2021 utániak
+)
+```
+
+---
+
 
 📁 Fájlok
 
