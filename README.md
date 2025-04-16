@@ -156,11 +156,3 @@ pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-
 
 ---
 
-🧠 Fejlesztési lehetőségek
-📅 Csak régi levelek archiválása (pl. 2022 előtti)
-
-✅ Csak olvasott levelek archiválása
-
-⭐ Csillagozott vagy fontos levelek kivételével archiválás
-
-🗂 Feldolgozás batch-ekben (100-asával) nagy fiókok esetén
